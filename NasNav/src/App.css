@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #212121;
+  --secondary-color: rgba(186, 53, 53, 0.888);
+}
+
+.overlay {
+  z-index: 99;
+  position: absolute;
+  width: 100vw;
+  height: 180vh;
+  background-color: rgba(171, 176, 190, 0.5);
+}

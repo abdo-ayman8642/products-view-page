@@ -1,0 +1,75 @@
+/* Navigation bar styles */
+.navbar {
+  background-color: white;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-logo {
+  margin-right: 20px;
+  height: 30px; /* Adjust the height of your logo */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+.navbar-links-logos {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.navbar-links-logos a {
+  font-size: 23px;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  margin-left: 25px;
+}
+.cart-num {
+  position: absolute;
+  font-size: 13px;
+  top: -10px;
+  text-align: center;
+  color: white;
+  width: 17px;
+  height: 17px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-links {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .navbar-links a {
+    margin: 5px 0;
+  }
+}
+.cart-icon {
+  position: relative;
+}

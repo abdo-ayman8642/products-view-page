@@ -1,0 +1,140 @@
+.cont {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.right {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.left img {
+  width: 50%;
+  float: right;
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 5px;
+}
+
+.imgcont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px; /* Adjust the gap between images as needed */
+  max-width: 800px; /* Set a maximum width for the grid container */
+  margin: 0 auto; /* Center the grid container horizontally */
+}
+
+.central-image {
+  grid-column: 2 / span 2; /* Span the central image across three columns */
+  grid-row: 1 / span 4; /* Span the central image across two rows */
+}
+
+.side-image {
+  width: 100%; /* Ensure the images take the full width of their cells */
+  height: 100%; /* Ensure the images take the full height of their cells */
+  overflow: hidden; /* Hide any overflowing parts of the images */
+}
+
+img {
+  width: 100%; /* Ensure the images take the full width of their containers */
+  height: 100%; /* Ensure the images take the full height of their containers */
+  object-fit: cover; /* Scale the images to cover their containers */
+}
+.side-image img {
+  padding-left: auto;
+}
+.central-image img {
+  float: left;
+  width: 80%;
+}
+.nameproduct {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.price {
+  margin: 20px 0;
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+.size p,
+.color {
+  color: var(--secondary-color);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.size span {
+  border: 1px solid rgb(110, 110, 110);
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.color {
+  margin-top: 10px;
+}
+.color p {
+  margin-bottom: 10px;
+}
+.color span {
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: aqua;
+  width: 30px;
+  height: 30px;
+}
+.color span:nth-of-type(1) {
+  background-color: rebeccapurple;
+}
+.color span:nth-of-type(2) {
+  background-color: yellowgreen;
+}
+.color span:nth-of-type(3) {
+  background-color: brown;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.buttons * {
+  text-align: center;
+  padding: 10px;
+}
+.buy-now {
+  grid-column: 2/4;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-transform: capitalize;
+  align-self: center;
+}
+.counter div {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid rgba(153, 153, 153, 0.758);
+  border-radius: 5px;
+}
+.counter div::before {
+  content: "-";
+  position: absolute;
+  left: 10px;
+  color: rgb(129, 129, 129);
+}
+.counter div::after {
+  content: "+";
+  position: absolute;
+  right: 10px;
+  color: rgb(129, 129, 129);
+}
+.wishlist {
+  font-size: 1rem;
+  margin-left: 10px;
+  padding: 0.5rem 1rem;
+  background-color: rgba(231, 228, 228, 0.792);
+  border-radius: 7px;
+  border: none;
+}
