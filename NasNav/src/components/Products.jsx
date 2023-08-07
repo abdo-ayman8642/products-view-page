@@ -4,64 +4,7 @@ import ProductCard from "./ProductCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Products.css";
-
-const products = [
-  {
-    id: 1,
-    name: "Product 1",
-    image: "../src/assets/first.jpg",
-    price: 29.99,
-  },
-  {
-    id: 2,
-    name: "Product 2",
-    image: "../src/assets/download (2).jpg",
-    price: 19.99,
-  },
-  {
-    id: 3,
-    name: "Product 3",
-    image: "../src/assets/download (3).jpg",
-    price: 39.99,
-  },
-  {
-    id: 4,
-    name: "Product 1",
-    image: "../src/assets/download.jpg",
-    price: 29.99,
-  },
-  {
-    id: 5,
-    name: "Product 2",
-    image: "../src/assets/download.jpg",
-    price: 19.99,
-  },
-  {
-    id: 6,
-    name: "Product 3",
-    image: "../src/assets/first.jpg",
-    price: 39.99,
-  },
-  {
-    id: 7,
-    name: "Product 1",
-    image: "../src/assets/download (2).jpg",
-    price: 29.99,
-  },
-  {
-    id: 8,
-    name: "Product 2",
-    image: "../src/assets/download (3).jpg",
-    price: 19.99,
-  },
-  {
-    id: 9,
-    name: "Product 3",
-    image: "../src/assets/download.jpg",
-    price: 39.99,
-  },
-  // Add more products as needed
-];
+import { products } from "../utils/services/data";
 
 const ProductSlider = () => {
   const settings = {
@@ -92,6 +35,7 @@ const ProductSlider = () => {
             image={product.image}
             name={product.name}
             price={product.price}
+            rating={product.rating}
           />
         ))}
       </Slider>

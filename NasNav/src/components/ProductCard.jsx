@@ -9,7 +9,7 @@ class ProductCard extends Component {
     super(props);
   }
   render() {
-    const { addToCart, id, name, image, price } = this.props;
+    const { addToCart, id, name, image, price, rating } = this.props;
     return (
       <div className={styles["product-card"]}>
         <img src={image} alt={name} />
@@ -21,7 +21,7 @@ class ProductCard extends Component {
           laboriosam ipsum!
         </p>
         <p className={styles.price}>{price} EGP</p>
-        <p>{"⭐".repeat(Math.floor(Math.random() * 5) + 1)} </p>
+        <p>{"⭐".repeat(rating)} </p>
         <div className={styles.buttons}>
           <button
             className={styles.cart}
